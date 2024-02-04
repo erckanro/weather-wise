@@ -3,6 +3,7 @@ import axios from "axios";
 import Search from "./search_input/Search";
 import WeatherInformation from "./weather_information/WeatherInformation";
 import WeatherDetails from "./weather_details/WeatherDetails";
+import Logo from "../assets/word-logo-white.svg";
 
 function Weather() {
   const [data, setData] = useState({});
@@ -25,11 +26,7 @@ function Weather() {
   return (
     <>
       <div className="logo-wrapper">
-        <img
-          className="logo"
-          src="src/assets/word-logo-white.svg"
-          alt="Weather Wise Logo"
-        />
+        <img className="logo" src={Logo} alt="Weather Wise Logo" />
       </div>
       <Search
         location={location}
