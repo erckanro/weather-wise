@@ -23,7 +23,14 @@ function Weather() {
   };
 
   return (
-    <div className="app">
+    <>
+      <div className="logo-wrapper">
+        <img
+          className="logo"
+          src="src/assets/word-logo-white.svg"
+          alt="Weather Wise Logo"
+        />
+      </div>
       <Search
         location={location}
         setLocation={setLocation}
@@ -48,7 +55,7 @@ function Weather() {
           </>
         )}
       </div>
-    </div>
+    </>
   );
 }
 
